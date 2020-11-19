@@ -6,6 +6,15 @@
 /*цвет фона под фото и заголовка баннера  #FFFFFF*/
 /*цвет фона сек наша команда  #F5F4FA*/
 
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
 
 :root{
   --main-text-color:#212121;
@@ -22,17 +31,26 @@ body{
   color:#212121;
   font-family: Roboto,OpenSans;
   letter-spacing: 0.03em
-}
+  }
 a{
   text-decoration:none;
 }
 ul {
   list-style:none ;
 }
-      
+  
+.container{
+outline: 2px solid red;
+ margin-left: auto;
+ margin-right: auto;
+ width: 1230px;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+
 /* HEADER */
 
-  /*logo*/
+   /*logo*/
 .menu-nav > a{
   color: var(--accent-color);
   font-family:Raleway, OpenSans;
@@ -49,12 +67,18 @@ ul {
 }
 
 /*site-nav list*/
+.site-nav {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .site-nav .link{
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  
 }
 
 .site-nav .link:hover,
@@ -63,10 +87,15 @@ ul {
 .auth-nav .contact:hover,
 .auth-nav .contact:focus{
   color: var(--accent-color);
-  }
+}
 
 /*auth-nav list*/
- .contact{
+.auth-nav{
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.contact{
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
@@ -81,7 +110,10 @@ ul {
 .hero{
   background-color:var(--footer-hero-color);
 }
-.hero .title{
+
+ .title{
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--main-title-color);
   font-weight: 900;
   font-size: 44px;
@@ -90,7 +122,8 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero .button{
+ .button{
+  display: inline-block;
   background-color: var(--accent-color);
   color: var(--main-title-color);
   font-family: Roboto,OpenSans;
@@ -104,9 +137,16 @@ ul {
 }
 
 /*section Почему именно мы*/
-
+.section-title{
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
 .section-title h3{
   color: var(--main-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -114,7 +154,10 @@ ul {
   }
 
 .secion-text{
+  display: inline-block;
   color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -160,6 +203,7 @@ ul {
 } 
 
 /*logo*/
+
 .footer > a{
   color: var(--accent-color);
   font-family: Raleway;
