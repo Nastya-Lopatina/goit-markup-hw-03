@@ -1,0 +1,217 @@
+/*основной цвет #212121;*/
+/*цвет акцент(кнопка, web,) #2196F3;*/
+/*цвет studio #000000, 100 %*/
+/*цвет текста #757575;*/
+/*цвет фона баннера (герой) и подвала #2F303A*/
+/*цвет фона под фото и заголовка баннера  #FFFFFF*/
+/*цвет фона сек наша команда  #F5F4FA*/
+
+
+:root{
+  --main-text-color:#212121;
+  --accent-color:#2196F3; 
+  --text-color:#757575 ;
+  --main-title-color: #FFFFFF;
+  --studio-color--:#000000;
+  --footer-hero-color:#2F303A;
+  --background-color:#F5F4FA ;
+  }
+
+body{
+  background-color:#FFFFFF;
+  color:#212121;
+  font-family: Roboto,OpenSans;
+  letter-spacing: 0.03em
+}
+a{
+  text-decoration:none;
+}
+ul {
+  list-style:none ;
+}
+      
+/* HEADER */
+
+  /*logo*/
+.menu-nav > a{
+  color: var(--accent-color);
+  font-family:Raleway, OpenSans;
+  font-weight: 700;
+  font-size: 26px;
+  line-height:1.2;
+}
+.studio{
+  color: var(--studio-color--);
+  font-family:Raleway, OpenSans;
+  font-weight: 700;
+  font-size: 26px;
+  line-height:1.2;
+}
+
+/*site-nav list*/
+.site-nav .link{
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:active,
+.site-nav .link.current,
+.auth-nav .contact:hover,
+.auth-nav .contact:focus{
+  color: var(--accent-color);
+  }
+
+/*auth-nav list*/
+ .contact{
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+} 
+
+
+       /*MAIN*/
+
+/*section hero (баннер)*/
+.hero{
+  background-color:var(--footer-hero-color);
+}
+.hero .title{
+  color: var(--main-title-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero .button{
+  background-color: var(--accent-color);
+  color: var(--main-title-color);
+  font-family: Roboto,OpenSans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/*section Почему именно мы*/
+
+.section-title h3{
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  }
+
+.secion-text{
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* section Чем мы занимаемся*/
+.img {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  }
+
+/*section Наша команда */
+.employees{
+  background-color:var(--background-color);
+}
+.employees h2{
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+.name {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+.profession{
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+ /*FOOTER*/
+
+.footer{
+  background-color: var(--footer-hero-color);
+} 
+
+/*logo*/
+.footer > a{
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo{
+  color: var(--main-title-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+  /*Адрес+контакты*/
+.address{
+  color: var(--main-title-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.phone-mail{
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/*ПОРТФОЛИО*/
+
+/* section Категории*/
+.list .button{
+  color: var(--main-text-color);
+  font-family: Raleway, OpenSans; 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+.list .button:hover{
+  background-color: var(--accent-color);
+  color: var(--main-title-color);
+}
+.project{
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+}
+.work{
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
