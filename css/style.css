@@ -32,54 +32,72 @@ body{
   font-family: Roboto,OpenSans;
   letter-spacing: 0.03em
   }
+
 a{
   text-decoration:none;
 }
+
 ul {
   list-style:none ;
+  margin: 0;
+  padding: 0;
 }
   
 .container{
-outline: 2px solid red;
+ outline: 2px solid red;
  margin-left: auto;
  margin-right: auto;
- width: 1230px;
+ width: 1200px;
  padding-left: 15px;
  padding-right: 15px;
 }
 
 /* HEADER */
-
-   /*logo*/
-.menu-nav > a{
-  color: var(--accent-color);
-  font-family:Raleway, OpenSans;
-  font-weight: 700;
-  font-size: 26px;
-  line-height:1.2;
+.menu-nav{
+  display: flex;
+  align-items: center;
+  background-color: mediumspringgreen;
+  
 }
+   /*logo*/
+.web{
+    display: inline-block;
+  
+    color: var(--accent-color);
+    font-family: Raleway,OpenSans;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
 .studio{
+ 
   color: var(--studio-color--);
   font-family:Raleway, OpenSans;
   font-weight: 700;
   font-size: 26px;
   line-height:1.2;
+  margin-right: 93px;
 }
 
 /*site-nav list*/
-.site-nav {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+.site-nav{
+  display: flex;
+  
 }
+.site-nav li + li{
+margin-left: 50px ;
+}
+
 .site-nav .link{
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  }
   
-}
+ 
 
 .site-nav .link:hover,
 .site-nav .link:active,
@@ -91,9 +109,12 @@ outline: 2px solid red;
 
 /*auth-nav list*/
 .auth-nav{
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
+  margin-left: auto;
+  
+}
+.auth-nav li + li{
+  margin-left: 50px;
 }
 .contact{
   color: var(--text-color);
@@ -111,9 +132,14 @@ outline: 2px solid red;
   background-color:var(--footer-hero-color);
 }
 
- .title{
-  margin-top: 0;
-  margin-bottom: 0;
+ .maim-title{
+   
+  margin: 0;
+  margin-bottom: 30px;
+  
+  width: 696px;
+  height: 120px;
+
   color: var(--main-title-color);
   font-weight: 900;
   font-size: 44px;
@@ -123,7 +149,6 @@ outline: 2px solid red;
   text-transform: uppercase;
 }
  .button{
-  display: inline-block;
   background-color: var(--accent-color);
   color: var(--main-title-color);
   font-family: Roboto,OpenSans;
@@ -131,22 +156,23 @@ outline: 2px solid red;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+  padding:10px 32px 10px 32px;
+  }
 
 /*section Почему именно мы*/
 .section-title{
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 0;
-  
+  display: flex;
+  justify-content: space-between;
+  background-color: magenta;
 }
-.section-title h3{
+
+.section-title li + li{
+  margin-left: 30px;
+}
+.small-title{
   color: var(--main-text-color);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 9px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -154,7 +180,6 @@ outline: 2px solid red;
   }
 
 .secion-text{
-  display: inline-block;
   color: var(--text-color);
   margin-top: 0;
   margin-bottom: 0;
@@ -163,25 +188,42 @@ outline: 2px solid red;
 }
 
 /* section Чем мы занимаемся*/
-.img {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  }
-
-/*section Наша команда */
-.employees{
-  background-color:var(--background-color);
-}
-.employees h2{
+.title{
+  margin-top: 0px;
+  margin-bottom: 50px;
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
 }
+  
+.img{
+  display: flex;
+  justify-content: space-between;
+  background-color: mediumturquoise;
+}
+ 
+.img li + li{
+margin-left: 30px;
+}
+/*section Наша команда */
+.employees{
+background-color:var(--background-color);
+}
+
+.command{
+  display: flex;
+  
+  background-color: orange;
+}
+.command li + li{
+  margin-left: 30px;
+}
 .name {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -189,6 +231,8 @@ outline: 2px solid red;
   text-align: center;
 }
 .profession{
+  margin: 0;
+
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
@@ -204,14 +248,9 @@ outline: 2px solid red;
 
 /*logo*/
 
-.footer > a{
-  color: var(--accent-color);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
 .logo{
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--main-title-color);
   font-family: Raleway;
   font-weight: 700;
@@ -236,6 +275,10 @@ outline: 2px solid red;
 /*ПОРТФОЛИО*/
 
 /* section Категории*/
+
+.category{
+  margin: 0;
+}
 .list .button{
   color: var(--main-text-color);
   font-family: Raleway, OpenSans; 
@@ -249,11 +292,14 @@ outline: 2px solid red;
   color: var(--main-title-color);
 }
 .project{
+  margin-top: 0px;
+  margin-bottom: 4px;
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.9;
 }
 .work{
+  margin: 0;
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
