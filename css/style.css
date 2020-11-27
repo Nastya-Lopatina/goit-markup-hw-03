@@ -69,12 +69,11 @@ img{
 } 
 
 .header-main{
-  display: ;
+  display: flex;
   align-items: center;
 }
 .menu-nav{
   display: flex;
-
 }
 
 
