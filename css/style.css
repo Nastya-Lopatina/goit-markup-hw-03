@@ -65,7 +65,6 @@ img{
 .header{
   padding-top: 24px;
   padding-bottom: 25px;
-  background-color: lawngreen;
   border-bottom: 1px solid var(--border-bottom-color); 
 } 
 
